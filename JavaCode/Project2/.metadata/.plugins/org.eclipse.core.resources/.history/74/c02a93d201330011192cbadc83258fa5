@@ -1,0 +1,302 @@
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+pageEncoding="ISO-8859-1"%>
+
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>GradeSense AI | Next Gen System</title>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- ✅ Google Font -->
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<!-- ✅ Font Awesome Icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+body{
+margin:0;
+font-family:'Poppins','Segoe UI',sans-serif;
+-webkit-font-smoothing:antialiased;
+-moz-osx-font-smoothing:grayscale;
+background:linear-gradient(135deg,#020617,#0f172a);
+color:white;
+overflow-x:hidden;
+}
+
+/* NAVBAR */
+.navbar{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(15px);
+}
+
+.navbar-brand{
+font-weight:700;
+font-size:22px;
+color:#00f5ff !important;
+}
+
+.navbar-brand i{
+margin-right:8px;
+text-shadow:0 0 15px #00f5ff;
+}
+
+/* HERO */
+.hero{
+height:100vh;
+display:flex;
+justify-content:center;
+align-items:center;
+text-align:center;
+}
+
+.hero h1{
+font-size:60px;
+font-weight:700;
+background:linear-gradient(90deg,#00f5ff,#ff00ff);
+-webkit-background-clip:text;
+-webkit-text-fill-color:transparent;
+animation:glow 3s infinite alternate;
+}
+
+@keyframes glow{
+from{filter:drop-shadow(0 0 10px #00f5ff);}
+to{filter:drop-shadow(0 0 25px #ff00ff);}
+}
+
+.hero p{
+color:#cbd5e1;
+font-size:18px;
+}
+
+/* BUTTON */
+.btn-ai{
+background:linear-gradient(45deg,#00f5ff,#ff00ff);
+border:none;
+padding:12px 30px;
+border-radius:30px;
+color:white;
+transition:0.4s;
+}
+
+.btn-ai:hover{
+transform:scale(1.1);
+box-shadow:0 0 20px #ff00ff;
+}
+
+/* GLASS CARD */
+.glass{
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(20px);
+border-radius:20px;
+padding:25px;
+transition:0.4s;
+}
+
+.glass:hover{
+transform:translateY(-10px);
+box-shadow:0 0 30px rgba(255,0,255,0.5);
+}
+
+/* SECTION */
+.section{
+padding:80px 0;
+}
+
+/* CHATBOT */
+.chatbot{
+position:fixed;
+bottom:20px;
+right:20px;
+width:300px;
+background:rgba(0,0,0,0.7);
+backdrop-filter:blur(15px);
+border-radius:15px;
+overflow:hidden;
+box-shadow:0 0 20px #00f5ff;
+}
+
+.chat-header{
+background:#00f5ff;
+color:black;
+padding:10px;
+font-weight:bold;
+text-align:center;
+}
+
+.chat-body{
+height:200px;
+overflow-y:auto;
+padding:10px;
+font-size:14px;
+}
+
+.chat-input{
+display:flex;
+}
+
+.chat-input input{
+flex:1;
+border:none;
+padding:10px;
+background:#111;
+color:white;
+}
+
+.chat-input button{
+background:#ff00ff;
+border:none;
+color:white;
+padding:10px;
+}
+
+/* CONTACT */
+.contact-box{
+background:rgba(255,255,255,0.05);
+padding:30px;
+border-radius:20px;
+}
+
+input, textarea{
+background:rgba(255,255,255,0.1) !important;
+border:none !important;
+color:white !important;
+}
+
+</style>
+
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+<div class="container">
+
+<a class="navbar-brand">
+<i class="fa-solid fa-brain"></i> GradeSense AI
+</a>
+
+<button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#menu">
+<span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="menu">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+<li class="nav-item"><a class="nav-link" href="#features">Features</a></li>
+<li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+<li class="nav-item">
+<a href="login" class="btn btn-ai ms-3">Login</a>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="hero" id="home">
+<div>
+<h1>AI Driven Student Insights</h1>
+<p>Experience the future of education with smart analytics</p>
+<a href="login" class="btn btn-ai mt-3">Start Now</a>
+</div>
+</section>
+
+<!-- FEATURES -->
+<section class="section container text-center" id="features">
+
+<h2 class="mb-5"> Features</h2>
+
+<div class="row g-4">
+
+<div class="col-md-4">
+<div class="glass">
+<h4><i class="fa-solid fa-chart-line"></i> Analytics</h4>
+<p>Track student growth visually</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="glass">
+<h4><i class="fa-solid fa-robot"></i> AI Prediction</h4>
+<p>Smart performance forecasting</p>
+</div>
+</div>
+
+<div class="col-md-4">
+<div class="glass">
+<h4><i class="fa-solid fa-gauge-high"></i> Dashboard</h4>
+<p>Real-time insights</p>
+</div>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section class="section container" id="contact">
+
+<h2 class="text-center mb-5"> Contact</h2>
+
+<div class="row">
+<div class="col-md-6">
+<img src="https://images.unsplash.com/photo-1521791136064-7986c2920216" class="img-fluid rounded">
+</div>
+
+<div class="col-md-6">
+<div class="contact-box">
+
+<form action="<%=request.getContextPath()%>/saveContact" method="post">
+<input type="text" name="name" placeholder="Name" class="form-control mb-3">
+<input type="email" name="email" placeholder="Email" class="form-control mb-3">
+<input type="text" name="phone" placeholder="Phone" class="form-control mb-3">
+<textarea name="message" placeholder="Message" class="form-control mb-3"></textarea>
+<button class="btn btn-ai w-100">Send</button>
+</form>
+
+</div>
+</div>
+</div>
+
+</section>
+
+<!-- CHATBOT -->
+<div class="chatbot">
+<div class="chat-header">AI Assistant 🤖</div>
+<div class="chat-body" id="chatBody">
+<p>Hi! Ask me anything 😊</p>
+</div>
+<div class="chat-input">
+<input type="text" id="msg" placeholder="Type...">
+<button onclick="sendMsg()">➤</button>
+</div>
+</div>
+
+<script>
+function sendMsg(){
+let input = document.getElementById("msg");
+let chat = document.getElementById("chatBody");
+
+let userMsg = input.value;
+if(userMsg==="") return;
+
+chat.innerHTML += "<p><b>You:</b> "+userMsg+"</p>";
+
+let botReply = "I am AI 🤖, I will help you!";
+chat.innerHTML += "<p><b>Bot:</b> "+botReply+"</p>";
+
+input.value="";
+chat.scrollTop = chat.scrollHeight;
+}
+</script>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
