@@ -1,0 +1,37 @@
+package Arrays.may.code;
+
+import java.util.Scanner;
+
+public class ReplaceElement {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		int a[]=new int[5];
+		System.out.println("enter arrays element :");
+		for(int i=0;i<a.length;i++) {
+			a[i]=sc.nextInt();
+			
+		}
+		System.out.println("enter element which you want to replace from array");
+		int oldElement=sc.nextInt();
+		System.out.print("enter new element which you want to insert");
+		int newElement=sc.nextInt();
+		boolean flag=false;
+		for(int i=0;i<a.length;i++) {
+			if(a[i]==oldElement) {
+				a[i]=newElement;
+				flag=true;
+				break;
+			}
+		}
+		if(flag) {
+			System.out.print("element replace successfull");
+		}
+		else {
+			System.out.print("element does not replace...");
+		}
+		
+			
+	}
+
+}

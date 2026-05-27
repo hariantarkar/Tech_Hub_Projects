@@ -30,6 +30,7 @@ public class PalindromeArrays {
 					else
 					{
 						flag = 0;
+						break;
 					}
 				}
 				if(flag==1)
