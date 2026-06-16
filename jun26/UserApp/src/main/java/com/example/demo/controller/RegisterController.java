@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.example.demo.dto.LoginRequest.LoginRequest;
+import com.example.demo.dto.LoginRequest.LoginResponse;
 import com.example.demo.entity.Register;
 import com.example.demo.service.AuthenticatedService;
 
@@ -29,22 +30,38 @@ public class RegisterController {
 		
 		
 	}
+
+	/*
+	 * @PostMapping("/auth/login") public ResponseEntity<String> login(
+	 * 
+	 * @RequestBody LoginRequest request){
+	 * 
+	 * 
+	 * String token = authService.login( request.getUsername(),
+	 * request.getPassword() );
+	 * 
+	 * 
+	 * return new ResponseEntity<>(token,HttpStatus.OK);
+	 * 
+	 * }
+	 */
 	@PostMapping("/auth/login")
-	public ResponseEntity<String> login(
-			@RequestBody LoginRequest request){
+	public ResponseEntity<LoginResponse> login(
+	        @RequestBody LoginRequest request) {
 
+	    String token = authService.login(
+	            request.getUsername(),
+	            request.getPassword());
 
-		String token = authService.login(
-				request.getUsername(),
-				request.getPassword()
-		);
+	    LoginResponse response = new LoginResponse("Login Successfull", token);
 
-
-		return new ResponseEntity<>(token,HttpStatus.OK);
-
+	    response.setMessage("Login Successfully");
+	    response.setToken(token);
+	    return ResponseEntity.ok(response);
 	}
 	@GetMapping("/user/profile")
 	public String profile() {
 	    return "Welcome User";
 	}
+	
 }
