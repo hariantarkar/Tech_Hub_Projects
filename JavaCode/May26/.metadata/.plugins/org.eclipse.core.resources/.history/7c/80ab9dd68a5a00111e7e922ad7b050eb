@@ -1,0 +1,34 @@
+package Arrays.code1.com;
+
+import java.util.Scanner;
+
+public class ElementMoreThanHalfArray {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+	
+		int a[]=new int[9];
+		
+		System.out.println("enter arryas element");
+		for(int i=0;i<a.length;i++) {
+			a[i]=sc.nextInt();
+		}
+		int num=a[0];
+		
+		int finalcount=0;
+		for(int i=0;i<a.length;i++) {
+			int count=0;
+			for(int j=0;j<a.length;j++) {
+				if(a[i]==a[j]) {
+					count++;
+				}
+			}
+			if(count>a.length/2) {
+				System.out.println(a[i]+" appears more than "+a.length/2+" times where array half is"+a.length/2);
+				break;
+			}
+		}		
+		
+	}
+
+}

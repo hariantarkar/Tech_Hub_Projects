@@ -1,0 +1,42 @@
+package Arrays.code1.com;
+
+import java.util.Scanner;
+
+public class mergeAlternateEle {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+
+		int a[]=new int[5];
+		int arr[]=new int[4];
+		int a1[]=new int[a.length+arr.length];
+		System.out.print("enter first arrays elements:");
+		for(int i=0;i<a.length;i++) {
+			a[i]=sc.nextInt();
+		}
+		System.out.print("enter second  arrays elements:");
+		for(int i=0;i<a.length;i++) {
+			arr[i]=sc.nextInt();
+		}
+		int j=0,k=0;
+		for(int i=0;i<a1.length;i++) {
+			if(i%2==0 && k<a.length) {
+				a1[i]=a[i];
+				k++;
+			}else if(j<arr.length) {
+				a1[k]=arr[j];
+				j++;
+			}
+			else if(i<a.length) {
+				a1[k]=a[i];
+				i++;
+			}
+		}
+		
+		for(k=0;k<a1.length;k++) {
+			System.out.print("\t"+a1[k]);
+			
+		}
+	}
+
+}

@@ -1,0 +1,34 @@
+ //Write a program to update a number by new number at given index
+package Arrays.may.code;
+
+import java.util.Scanner;
+
+public class UpdateElement {
+
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		
+		int a[]=new int[5];
+		
+		System.out.print("enter arrays elements");
+		for(int i=0;i<a.length;i++) {
+			a[i]=sc.nextInt();
+		}System.out.print("arrays elements are  ");
+		for(int i=0;i<a.length;i++) {
+			System.out.print(a[i]+"\t");
+		}
+		System.out.print("\nenter index which you want update with new element ");
+		int index=sc.nextInt();
+		System.out.print("\nenter new element which you want enter");
+		int newElement=sc.nextInt();
+		
+		a[index]=newElement;
+		System.out.print("after updated element array are:  ");
+		for(int i=0;i<a.length;i++) {
+			System.out.print(a[i]+"\t");
+		}
+		
+		
+	}
+
+}

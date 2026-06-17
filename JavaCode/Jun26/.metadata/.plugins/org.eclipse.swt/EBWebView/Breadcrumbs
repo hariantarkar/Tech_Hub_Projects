@@ -1,0 +1,67 @@
+0:00:00 Startup
+0:00:00 Microsoft.DeleteProfileHelper.CleanUpEphemeralProfiles
+0:00:00 Microsoft.DeleteProfileHelper.CleanUpDeletedProfiles
+0:00:00 Microsoft.NewBrowser_Popup
+0:00:00 Microsoft.BrowserList.AddBrowser
+0:00:00 Browser1 Insert active Tab1 at 0
+0:00:00 Tab1 StartNav1 #auto_toplevel
+0:00:00 Tab1 FinishNav1
+0:00:00 Tab1 PageLoad
+0:00:00 Tab1 StartNav2 #typed
+0:00:00 Tab1 FinishNav2 ERR_ABORTED
+0:00:00 Tab1 StartNav3 #typed
+0:00:00 Tab1 FinishNav3
+0:00:00 Tab1 PageLoad
+25:10:20 Memory Pressure: Moderate
+25:10:25 Memory Pressure: None
+25:10:55 Memory Pressure: Moderate
+25:11:00 Memory Pressure: None
+26:55:20 Memory Pressure: Moderate
+26:55:30 Memory Pressure: None
+26:55:45 Memory Pressure: Moderate
+26:55:50 Memory Pressure: None
+26:56:20 Memory Pressure: Moderate
+26:56:25 Memory Pressure: None
+26:57:10 Memory Pressure: Moderate
+26:57:20 Memory Pressure: Moderate
+26:57:30 Memory Pressure: Moderate
+26:57:40 Memory Pressure: None
+26:58:05 Memory Pressure: Moderate
+26:58:15 Memory Pressure: None
+27:58:50 Memory Pressure: Moderate
+27:59:00 Memory Pressure: None
+67:55:59 Memory Pressure: Moderate
+67:56:04 Memory Pressure: None
+67:56:09 Memory Pressure: Moderate
+67:56:14 Memory Pressure: None
+73:23:58 Memory Pressure: Moderate
+73:24:08 Memory Pressure: Moderate
+73:24:18 Memory Pressure: Moderate
+73:24:28 Memory Pressure: None
+73:24:38 Memory Pressure: Moderate
+73:24:43 Memory Pressure: None
+73:24:48 Memory Pressure: Moderate
+73:24:58 Memory Pressure: Moderate
+73:25:08 Memory Pressure: Moderate
+73:25:18 Memory Pressure: Moderate
+73:25:23 Memory Pressure: None
+73:26:18 Memory Pressure: Moderate
+73:26:28 Memory Pressure: None
+76:00:32 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
+0:00:00 Startup
+0:00:00 Microsoft.DeleteProfileHelper.CleanUpEphemeralProfiles
+0:00:00 Microsoft.DeleteProfileHelper.CleanUpDeletedProfiles
+0:00:00 Microsoft.NewBrowser_Popup
+0:00:00 Microsoft.BrowserList.AddBrowser
+0:00:00 Browser1 Insert active Tab1 at 0
+0:00:00 Tab1 StartNav1 #auto_toplevel
+0:00:00 Tab1 FinishNav1
+0:00:00 Tab1 PageLoad
+0:00:01 Memory Pressure: Critical
+0:00:01 Tab1 StartNav2 #typed
+0:00:01 Tab1 FinishNav2
+0:00:01 Tab1 PageLoad
+0:00:04 Tab1 StartNav3 #typed
+0:00:04 Tab1 FinishNav3
+0:00:04 Tab1 PageLoad
+0:00:28 Microsoft.UnloadController.IsUnclosableApp_IsNotWebApp
