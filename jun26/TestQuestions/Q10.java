@@ -18,5 +18,7 @@ public class Q10 {
                 System.out.print(uniqueNumber + " ");
             }
         }
+    
+        
     }
 }   
