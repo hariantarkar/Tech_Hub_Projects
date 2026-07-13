@@ -14,7 +14,6 @@ public class StringDigitSum {
 
          String str2 = "abc123def4567f5";
         System.out.println("Sum of digits manual calculation another way  : " + sumOfD(str2));
-   
     } 
     public static int sumOfDigits(String str) {
         int count = 0;
@@ -39,3 +38,5 @@ public class StringDigitSum {
         return countsum;
     }
 }
+
+
