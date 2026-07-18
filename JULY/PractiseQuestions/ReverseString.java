@@ -17,7 +17,8 @@ StringBuilder result=new StringBuilder();
     result1.append(words[i]+" ");
 
  }
- System.out.println(result1);
+
+  System.out.println(result1);
 
 }
 }

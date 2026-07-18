@@ -7,7 +7,7 @@ public class StringFirstWordC {
         for(String word:words){
            if(word.length()>0){
             String firstchar=word.substring(0,1);
-          String   result=firstchar.toUpperCase().concat(word.substring(1));
+           String   result=firstchar.toUpperCase().concat(word.substring(1));
             
             System.out.print(result+" ");
            } 

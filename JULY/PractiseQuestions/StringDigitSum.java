@@ -8,6 +8,7 @@ public class StringDigitSum {
                 sum += Character.getNumericValue(ch);
             }
         }
+        
         System.out.println("Sum of digits in the string: " + sum);
         String str1 = "abc123def4567";
         System.out.println("Sum of digits manual calculation : " + sumOfDigits(str1));
