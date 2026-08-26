@@ -88,7 +88,6 @@ public class MainApp {
 
 				@Override
 				public void setValues(PreparedStatement ps) throws SQLException {
-					// TODO Auto-generated method stub
 					ps.setString(1, name);
 					ps.setInt(2, sal);
 					ps.setInt(3, id);

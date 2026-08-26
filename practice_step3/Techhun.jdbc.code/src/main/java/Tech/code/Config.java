@@ -15,8 +15,6 @@ public class Config {
 	@Bean(name="dataSource")
 	public DriverManagerDataSource getDataSource() {
 		
-	
-	
 	DriverManagerDataSource dataSource =new DriverManagerDataSource();
 	dataSource.setUsername("root");
 	dataSource.setPassword("root");
@@ -30,9 +28,7 @@ public class Config {
 	@Bean(name="template")
 	public JdbcTemplate getTemplate() {
 		JdbcTemplate template=new JdbcTemplate();
-		
-		template.setDataSource(getDataSource());
-		
+		template.setDataSource(getDataSource());	
 		return template;
 	}
 }
