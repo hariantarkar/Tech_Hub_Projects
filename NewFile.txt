@@ -1,0 +1,2 @@
+this is an testing data..
+using the bufferedwritter classs ways
