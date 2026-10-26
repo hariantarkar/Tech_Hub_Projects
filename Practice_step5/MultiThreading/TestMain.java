@@ -14,7 +14,6 @@ public class TestMain {
             return;
         }
 
-       
         B b =new B();
 
         b.start();
@@ -22,7 +21,7 @@ public class TestMain {
 
 
     }
-
-
 }
+
+
 
